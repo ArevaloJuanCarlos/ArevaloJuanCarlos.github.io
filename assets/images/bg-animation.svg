@@ -1,0 +1,110 @@
+<svg width="100" height="100" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="loadGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-opacity="0" />
+      <stop offset="99%" stop-opacity="0" />
+      <stop offset="100%" stop-color="hsla(160, 100%, 75%, 0.25)"/>
+      <animate attributeName="y2" dur="10s" values="0;1;1;0;0" keyTimes="0;0.3;0.5;0.8;1" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="inverseLoadGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-opacity="0" />
+      <stop offset="99%" stop-opacity="0" />
+      <stop offset="100%" stop-color="hsla(160, 100%, 75%, 0.25)"/>
+      <animate attributeName="y2" dur="10s" values="1;0;0;1;1" keyTimes="0;0.3;0.5;0.8;1" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <radialGradient id="pointGradiend">
+      <stop offset="0%" stop-color="white" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <rect id="fBox" width="16" height="16" rx="4" ry="4" fill="url(#loadGradient)" stroke="#64E5BB">
+      <animate 
+        attributeName="stroke-opacity"
+        dur="10s"
+        repeatCount="indefinite"
+        values="1;1;0;1;0;1;0;1;0;1;0;1;1"
+        keyTimes="0;0.2;0.24;0.28;0.32;0.36;0.40;0.44;0.48;0.52;0.56;0.6;1"
+      />
+    </rect>
+    <rect id="sBox" width="16" height="16" rx="4" ry="4" fill="url(#inverseLoadGradient)" stroke="#64E5BB"/>
+    <rect id="pointBox" width="16" height="16" fill="url(#pointGradiend)">
+      <animate attributeName="fill-opacity" dur="10s" values="0;1;0;0;1;0;0" keyTimes="0;0.15;0.3;0.5;0.65;0.8;1" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- 50% opacity -->
+    <rect id="fBox1" width="16" height="16" rx="4" ry="4" fill="hsla(160, 100%, 75%, 0.10)" stroke="hsla(160, 71%, 65%, 0.3)" />
+    <rect id="sBox1" width="16" height="16" rx="4" ry="4" stroke="hsla(160, 71%, 65%, 0.3)" />
+
+  </defs>
+
+  <!-- 100% opacity -->
+
+  <use href="#fBox" x="0" y="0"/>
+  <path id="path1" d="M 16 8 L 38 8 L 38 300" stroke="#24B28B" />
+  <use href="#sBox" x="30" y="300" />
+  <use href="#pointBox" x="-8" y="-8">
+    <animateMotion dur="10s" keyPoints="0;1;1;0;0" keyTimes="0;0.3;0.5;0.8;1" repeatCount="indefinite">
+      <mpath href="#path1" />
+    </animateMotion>
+  </use>
+
+  <use href="#fBox" x="20" y="500"/>
+  <path id="path2" d="M 36 508 L 100 508 L 100 108 L 400 108" stroke="#24B28B" />
+  <use href="#sBox" x="400" y="100" />
+  <use href="#pointBox" x="-8" y="-8">
+    <animateMotion dur="10s" keyPoints="0;1;1;0;0" keyTimes="0;0.3;0.5;0.8;1" repeatCount="indefinite">
+      <mpath href="#path2" />
+    </animateMotion>
+  </use>
+
+  <use href="#fBox" x="350" y="350"/>
+  <path id="path3" d="M 366 358 L 508 358 L 508 66" stroke="#24B28B" />
+  <use href="#sBox" x="500" y="50" />
+  <use href="#pointBox" x="-8" y="-8">
+    <animateMotion dur="10s" keyPoints="0;1;1;0;0" keyTimes="0;0.3;0.5;0.8;1" repeatCount="indefinite">
+      <mpath href="#path3" />
+    </animateMotion>
+  </use>
+
+  <use href="#fBox" x="150" y="300"/>
+  <path id="path4" d="M 166 308 L 408 308 L 408 116" stroke="#24B28B" />
+  <use href="#pointBox" x="-8" y="-8">
+    <animateMotion dur="10s" keyPoints="0;1;1;0;0" keyTimes="0;0.3;0.5;0.8;1" repeatCount="indefinite">
+      <mpath href="#path4" />
+    </animateMotion>
+  </use>
+
+  <path id="path5" d="M 16 8 L 38 8 L 38 58 L 300 58" stroke="#24B28B" />
+  <use href="#sBox" x="300" y="50" />
+  <use href="#pointBox" x="-8" y="-8">
+    <animateMotion dur="10s" keyPoints="0;1;1;0;0" keyTimes="0;0.3;0.5;0.8;1" repeatCount="indefinite">
+      <mpath href="#path5" />
+    </animateMotion>
+  </use>
+
+  <!-- 50% opacity -->
+  <use href="#fBox1" x="300" y="200" />
+  <path id="path5" d="M 300 208 L 208 208 L 208 400" stroke="hsla(164, 66%, 42%, 0.3)" />
+  <use href="#sBox1" x="200" y="400"/>
+
+  <use href="#fBox1" x="150" y="150" />
+  <path id="path5" d="M 166 158 L 350 158 L 350 28 L 430 28" stroke="hsla(164, 66%, 42%, 0.3)" />
+  <use href="#sBox1" x="430" y="20"/>
+
+  <use href="#fBox1" x="250" y="250" />
+  <path id="path5" d="M 266 258 L 460 258 L 460 148 L 550 148" stroke="hsla(164, 66%, 42%, 0.3)" />
+  <use href="#sBox1" x="550" y="140"/>
+
+  <use href="#fBox1" x="50" y="400" />
+  <path id="path5" d="M 58 416 L 58 470 L 408 470 L 408 426" stroke="hsla(164, 66%, 42%, 0.3)" />
+  <use href="#sBox1" x="400" y="410"/>
+
+  <use href="#fBox1" x="300" y="430" />
+  <path id="path5" d="M 308 430 L 308 390 L 508 390 L 508 500" stroke="hsla(164, 66%, 42%, 0.3)" />
+  <use href="#sBox1" x="500" y="500"/>
+
+  <use href="#fBox1" x="140" y="230" />
+  <path id="path5" d="M 140 238 L 70 238 L 70 28 L 200 28" stroke="hsla(164, 66%, 42%, 0.3)" />
+  <use href="#sBox1" x="200" y="20"/>
+</svg>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Arevalo - Portafolio Personal</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<img src="./assets/images/bg-animation.svg" class="bg-image" alt="background-image" width="100%">
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my_photo.jpg" alt="My photo" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Juan Arevalo">Juan Carlos Arevalo</h1>
+
+          <p class="title">Desarrollador Web</p>
+        </div>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="mailto:jarevaloferrufino@gmail.com" title="Correo" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="mail"></ion-icon> Correo
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/arevalo-ferrufino-juan-carlos-ba0084291" title="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link="about">Sobre mí</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resume">Currículum</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="portfolio">Portafolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hola, soy un Desarrollador de Software de Cochabamba, Bolivia, me especializo en el desarrollo web 
+            del lado de frontend. También tengo conocimientos de backend y desarrollo móvil.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Mis conocimientos</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo Web</h4>
+
+                <p class="service-item-text">
+                  Desarrollo de sitios web con React, Vue (frontend), Spring Boot y Laravel (backend)
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo móvil</h4>
+
+                <p class="service-item-text">
+                  Desarrollo de aplicaciones móviles con Android Studio
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">
+            Currículum
+            <a href="./assets/documents/CV.pdf" class="cv-file-icon" title="Descargar CV en PDF" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </a>
+          </h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Mayor de San Simón</h4>
+
+              <span>2017 — 2024</span>
+
+              <p class="timeline-text">
+                Licenciatura en Ingeniería de Sistemas
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Xanthops S.R.L.</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                Pasantía de seis meses en desarrollo frontend.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Mayor de San Simón</h4>
+
+              <span>2020 - 2023</span>
+
+              <p class="timeline-text">
+                Prácticas de desarrollo frontend, backend y desarrollo de aplicaciones móviles.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mis Aptitudes</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Vue</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Spring Boot</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Postgres</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Laravel</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Android nativo con Kotlin</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Jetpack Compose</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">
+            Portafolio
+          </h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn="all">Todo</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="web-development">Desarrollo Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="mobile-development">Desarrollo Móvil</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Categoría</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item="all">Todo</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="web-development">Desarrollo Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="mobile-development">Desarrollo Móvil</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web-development">
+              <p class="project-category">2023 - Desarrollo web frontend</p>
+              <h3 class="project-title">Sistema de administración de proyetos</h3>
+              <p class="project-subtitle">Vue, Ruby on Rails</p>
+              <hr>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web-development">
+              <p class="project-category">2023 - Desarrollo web frontend</p>
+              <h3 class="project-title">Sitio web de compra y venta de productos</h3>
+              <p class="project-subtitle">Vue, Ruby on Rails</p>
+              <hr>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web-development">
+              <p class="project-category">2020 - Desarrollo web fullstack</p>
+              <h3 class="project-title">Sitio web de cotizaciones</h3>
+              <p class="project-subtitle">React, Spring Boot</p>
+              <hr>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web-development">
+              <p class="project-category">2020 - Desarrollo web fullstack</p>
+              <h3 class="project-title">Sistema de regsitro de proyectos de software</h3>
+              <p class="project-subtitle">Laravel</p>
+              <hr>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web-development">
+              <p class="project-category">2020 - Desarrollo web backend</p>
+              <h3 class="project-title">API rest de un punto de distribución de productos</h3>
+              <p class="project-subtitle">Spring Boot</p>
+              <hr>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile-development">
+              <p class="project-category">2022 - Desarrollo móvil</p>
+              <h3 class="project-title">Aplicación para la navegación en interiores basado en Realidad Aumentada</h3>
+              <p class="project-subtitle">Android nativo con Kotlin</p>
+              <hr>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
